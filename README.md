@@ -1,2 +1,2 @@
-# Double pendulum
+# Physics Simulator 
  
