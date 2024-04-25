@@ -1,21 +1,35 @@
 /* styles/page.module.css */
 
-/* Header */
-.header {
+/* Body and HTML */
+body, html {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    z-index: 999; /* Ensure header is always on top */
     background-color: rgba(255, 255, 255, 0.9);
     color: #333333;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
   }
   
+  /* Logo */
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333333;
   }
   
+  /* Navigation */
   .nav ul {
     list-style: none;
     display: flex;
@@ -27,9 +41,10 @@
   
   .nav ul li a {
     color: #333333;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
   }
   
+  /* Footer */
   .footer {
     position: fixed;
     bottom: 0;
@@ -47,12 +62,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100vh; /* Set height to fill the viewport */
+    overflow: hidden; /* Prevent content from overflowing */
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(241, 241, 241, 0.9)), url('/background-image.jpg');
     background-size: cover;
     backdrop-filter: blur(4px);
   }
   
+  /* Home Title */
   .home-title {
     font-size: 3rem;
     font-weight: bold;
@@ -62,6 +79,7 @@
     margin-bottom: 2rem;
   }
   
+  /* Button Container */
   .button-container {
     display: flex;
     flex-direction: column;
@@ -69,6 +87,7 @@
     align-items: center;
   }
   
+  /* Home Button */
   .home-button {
     padding: 1.5rem 3rem;
     font-size: 1.2rem;
@@ -79,9 +98,9 @@
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline */
   }
   
   .home-button:hover {
     background: linear-gradient(to right, #f1f1f1, #ffffff);
   }
-  

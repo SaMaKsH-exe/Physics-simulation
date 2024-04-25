@@ -14,11 +14,10 @@ const Home: React.FC = () => {
           </ul>
         </nav>
       </header>
-
       <div className="home-container">
         <h1 className="home-title">Physics Simulation</h1>
         <div className="button-container">
-          <Link href="/DoublePendulum" passHref={true} legacyBehavior>
+          <Link href="/DoublePendulum" passHref={true} legacyBehavior>  
             <a className="home-button">Double Pendulum</a>
           </Link>
           <Link href="/FluidSimulation" passHref={true} legacyBehavior>
@@ -29,10 +28,11 @@ const Home: React.FC = () => {
           </Link>
         </div>
       </div>
-
+      <div>
       <footer className="footer">
         <p>&copy; 2024 Physics Simulator. All rights reserved.</p>
       </footer>
+      </div>
     </div>
   );
 }
