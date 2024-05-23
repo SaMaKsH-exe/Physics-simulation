@@ -1,3 +1,3 @@
 # Physics Simulator 
-### (in progress)
+### Ongoing 
 https://physics-simulation-exzb.vercel.app/
